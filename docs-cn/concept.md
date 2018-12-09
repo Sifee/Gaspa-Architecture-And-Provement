@@ -66,3 +66,9 @@ Scheduler: Server A1, Jail A1[network], Server A3, VM A4-1, Server A5, NAS B2, S
 `whisper` 是指低语，也就是 node 与 node 的通信。即直接将数据传输给另外一个 node，数据是直接通过网络传输的，仅接受者能够获得。但是在传输大量的数据给大量节点的场景，数据会被重复发送和存储，效率较低。`whisper` 保证提供单独、统一的 `messageID`，所以可以用来进行双向通信。
 
 `schedule` 是调度，基于 `whisper`，但是接收者不固定，由 `master` 和 `scheduler` 共同选举产生最佳接收者，包含 `loadBalance` 功能。
+
+## 数据结构 Data Structure
+
+// TODO: @xtlsoft: @LemonHX, you decide this point.
+
+待定。
